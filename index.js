@@ -32,15 +32,13 @@ function fuzzyMatch (arr, char) {
     })
 }
    
-function matchName (arr, name) {
+function matchName(drivers, name) {
+    return drivers.filter(function(driver){
+        return driver.name === name
+    }) 
     
 }
-//matchName(drivers, 'Bobby')
 
-(drivers.filter.name(function(info){
-    if('Sally' === drivers.name){
-        console.writeline('hi')
-    }
-}))
+matchName(drivers, 'Bobby')
 
 
